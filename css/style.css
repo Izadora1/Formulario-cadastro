@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+:root{
+    --roxo-claro: #DCC3FA;
+    --roxo-escuro: #7767A6;
+    --amarelo-trigo: #F7F4D0;
+    --verde-menta: #D0F7E9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCC3FA;
+}
+
+.container {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0 5px 0 rgb(0, 0, 0, 0.23);
+}
+
+#nome_estabelecimento{
+    padding: 0 0 10% 0;
+    font-size: 200%;
+}
+.image{
+    width: 90%;
+    height: 90vh;
+    background-color: var(--amarelo-trigo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    height: 50%;
+    width: 70%;
+}
+
+.cadastro {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.cadastro > * {
+    width: 100%;
+}
+
+.linha1{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 6%;
+}
+
+.linha1 input[type="button"] {
+    padding: 10px 20px;
+    background-color: var(--roxo-escuro);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.linha1 input[type="button"]:hover {
+    background-color: var(--roxo-claro);
+    color: black;
+}
+
+.linha2 input {
+    width: 130%;
+    height: 80%;
+    border: 1px solid var(--roxo-escuro);
+    border-radius: 5px;
+  }
+  
+.nome, .e-mail, .senha{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.atividades {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linha3, .texto{
+    padding: 3%;
+}
+
+.linha3 h3 {
+    padding-left: 9%;
+}
+
+.linha4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha4 input[type="button"] {
+    width: 80%;
+    padding: 10px;
+    background-color: var(--roxo-escuro);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.linha4 input[type="button"]:hover {
+    background-color: var(--roxo-claro);
+    color: black;
+}
