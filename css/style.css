@@ -84,21 +84,38 @@ body{
     color: black;
 }
 
-.linha2 input {
+.linha2 input{
     width: 130%;
-    height: 80%;
+    height: 100%;
     border: 1px solid var(--roxo-escuro);
     border-radius: 5px;
-  }
-  
-.nome, .e-mail, .senha{
+}
+
+.nome-completo, .e-mail, .data-cpf {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.nome-completo .texto {
+    width: 60%;
+}
+
+.e-mail .texto, .data-cpf .texto {
+    width: 33%;
+
 }
 
 .atividades {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.atividades label {
+    margin-right: 20px;
 }
 
 .linha3, .texto{
@@ -130,3 +147,5 @@ body{
     background-color: var(--roxo-claro);
     color: black;
 }
+
+
