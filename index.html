@@ -13,7 +13,7 @@
             <img src="img/undraw_personal_training_0dqn.svg" alt="pessoas se exercitando">
         </div>
         <div class="cadastro">
-            <form action="#">
+           <form action="#" onsubmit="recarregarPagina(); return false;">
                 <div class="linha1">
                     <h1>Cadastre-se</h1>
                     <input type="button" value="Entrar" onclick="">
@@ -57,10 +57,16 @@
                     </div>
                 </div>
                 <div class="linha4">
-                    <input type="button" value="Continuar" onclick="">
+                    <input type="submit" value="Continuar">
                 </div>
             </form>
         </div>
     </div>
+
+    <script>
+        function recarregarPagina() {
+            location.reload();
+        }
+    </script>
 </body>
 </html>
