@@ -106,6 +106,10 @@ body{
 
 }
 
+.texto h3 span {
+    color: var(--roxo-escuro);
+}
+
 .atividades {
     display: flex;
     justify-content: center;

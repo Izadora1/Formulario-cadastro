@@ -1,4 +1,6 @@
 const inputName = document.querySelector("#name");
+const formulario = document.getElementById('meuForm');
+
 
 inputName.addEventListener("paste",function() {
     setTimeout(function() {
@@ -16,4 +18,12 @@ inputName.addEventListener("keypress", function(){
         let novoNome = inputName.value.replace(rgx, '');
         inputName.value = novoNome;
     });
+});
+
+//impede que o input nome seja enviado vazio
+formulario.addEventListener("submit", function(e){
+    if(inputName.value === ''){
+        alert('Por favor, preencha o campo Nome Completo');
+        e.preventDefault();
+    }
 });

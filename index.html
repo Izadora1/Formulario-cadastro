@@ -14,15 +14,15 @@
             <img src="img/undraw_personal_training_0dqn.svg" alt="pessoas se exercitando">
         </div>
         <div class="cadastro">
-           <form action="#" onsubmit="recarregarPagina(); return false;">
+           <form action="#" id="meuForm" onsubmit="recarregarPagina(); return false;">
                 <div class="linha1">
                     <h1>Cadastre-se</h1>
-                    <input type="button" value="Entrar" onclick="">
+                    <!-- <input type="button" value="Entrar" onclick=""> -->
                 </div>
                 <div class="linha2">
                     <div class="nome-completo">
                         <div class="texto">
-                            <h3>Nome Completo</h3>
+                            <h3>Nome Completo <span>*</span></h3>
                             <input type="text" id = "name" placeholder="Digite seu nome completo" autocomplete="off">
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                             <input type="text" placeholder="(00)00000-0000">
                         </div>
                     </div>
-                    <div class="data-cpf">
+                    <!--<div class="data-cpf">
                         <div class="texto">
                             <h3>Data de Nascimento</h3>
                             <input type="date" placeholder="00/00/0000">
@@ -56,7 +56,7 @@
                         <label><input type="checkbox" />Boxe</label>
                         <label><input type="checkbox" />Yoga</label>
                     </div>
-                </div>
+                </div>-->
                 <div class="linha4">
                     <input type="submit" value="Continuar">
                 </div>
