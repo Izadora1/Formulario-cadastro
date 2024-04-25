@@ -26,10 +26,10 @@ inputName.addEventListener("keypress", function(){
 
 //impede que o input nome seja enviado vazio
 formulario.addEventListener("submit", function(e){
-    const rgxemail = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
-    const rgxcelular = new RegExp("^\(\d{2}\)\d{9}$/");
-    const rgxdata = new RegExp("^(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[0-2])(19|20)\d{2}$/");
-    const rgxcpf = new RegExp("/^\d{11}$/");
+    const rgxemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const rgxcelular = /^\(\d{2}\)\d{5}-\d{4}$/;
+    //const rgxdata = /^\d{2}\/\d{2}\/\d{4}$/;
+    const rgxcpf = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
     if(inputName.value === ''){
         inputName.style.border = '2px solid red';
         console.log("Nome inválido")
@@ -45,11 +45,11 @@ formulario.addEventListener("submit", function(e){
         console.log("Celular inválido")
         e.preventDefault();
     }
-    if(!rgxdata.test(inputaniversario.value)){
-        inputaniversario.style.border = '2px solid red';
-        console.log("Data inválida")
-        e.preventDefault();
-    }
+    // if(!rgxdata.test(inputaniversario.value)){
+    //     inputaniversario.style.border = '2px solid red';
+    //     console.log("Data inválida")
+    //     e.preventDefault();
+    // }
     if(!rgxcpf.test(inputCPF.value)){
         inputCPF.style.border = '2px solid red';
         console.log("CPF inválido")
