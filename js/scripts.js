@@ -8,7 +8,7 @@ const formulario = document.getElementById('meuForm');
 
 inputName.addEventListener("paste",function() {
     setTimeout(function() {
-        const rgx = new RegExp("^[a-zA-Z\b]+$");
+        const rgx = /^[a-zA-Z\s]*$/;
         if(!rgx.test(inputName)){
             inputName.value = "";
         }
@@ -16,9 +16,9 @@ inputName.addEventListener("paste",function() {
 
 });
 
-inputName.addEventListener("keypress", function(){
+inputName.addEventListener("input", function(){
     setTimeout(function() {
-        const rgx = new RegExp("[^a-zA-ZÀ-ú]", "g");
+        const rgx = /[^a-zA-ZÀ-ú\s]/g;
         let novoNome = inputName.value.replace(rgx, '');
         inputName.value = novoNome;
     });
